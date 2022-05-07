@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/productDetail.css">
+    <link rel="stylesheet" href="../font/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="icon" href="./../img/logo-weskin.svg" type="image/gif" sizes="32x32">
+    <title>Chi tiết sản phẩm</title>
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <div id="header">
+            <div class="row head">
+                <div class="col-md-3">
+                    <nav class="nav nav-fill">
+                        <li class="nav-item">
+                            <a class="nav-link p-0 img-fluid" href="index.html">
+                                <img src="../img/logo-weskin.svg" alt="" width="160px">
+                            </a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="col-md-6 row ">
+                    <div class="form-group form-inline w-100 justify-content-center">
+                        <div class="search">
+                            <i class="fa fa-search"></i>
+                            <input type="text" class="form-control dl-block w-100" placeholder="Search product...">
+                            <button class="btn btn-dark">Search</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 align-items-center row justify-content-end">
+                    <div class="row" style="margin-right: 38px;">
+                        <div class="col login d-flex align-items-center">
+                            <div class="account">
+                                <div class="dropdown">
+                                    <i class="fa-solid fa-clipboard-user icon-user" id="dropdownMenuButton"
+                                        aria-haspopup="true" aria-expanded="false"></i>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="login.html">Đăng Nhập</a>
+                                        <a class="dropdown-item" href="registration.html">Đăng Kí</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shopping">
+                                <div class="shopping-cart">
+                                    <i class="fa-solid fa-cart-shopping icon-shopping"></i>
+                                </div>
+                                <div class="cart">
+                                    <div class="cart-img show">
+                                        <img src="../img/empty-cart.webp" alt="" class="empty">
+                                    </div>
+                                    <div class="list-product">
+                                        <h1>Sản phẩm đã thêm</h1>
+                                        <ul class="list-cart">
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="col-sm-1"></div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active collapse-item">
+                            <a class="nav-link p-0 scroll-bar" href="index.html">Trang chủ <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item collapse-item">
+                            <a class="nav-link p-0 scroll-bar" href="about.html">Thành Viên</a>
+                        </li>
+                        <li class="nav-item dropdown bridge collapse-item">
+                            <a class="nav-link p-0 scroll-bar text-dark" href="allproducts.html" id="navbarDropdown">
+                                Sản Phẩm
+                                <i class=" fa-solid fa-caret-down"></i>
+                            </a>
+                            <div class="subnav row">
+                                <div class="subnav-list">
+                                    <h5>Dưỡng da</h5>
+                                    <ul>
+                                        <li><a href="">Mặt nạ</a></li>
+                                        <li><a href="">Kem dưỡng</a></li>
+                                        <li><a href="">Kem chống nắng</a></li>
+                                        <li><a href="">Xịt khoáng</a></li>
+                                    </ul>
+                                </div>
+                                <div class="subnav-list">
+                                    <h5>Làm sạch</h5>
+                                    <ul>
+                                        <li><a href="">Sữa rửa mặt</a></li>
+                                        <li><a href="">Kem tẩy trang</a></li>
+                                        <li><a href="">Dầu tẩy trang</a></li>
+                                        <li><a href="">Nước tẩy trang</a></li>
+                                    </ul>
+                                </div>
+                                <div class="subnav-list">
+                                    <h5>Trang điểm nền</h5>
+                                    <ul>
+                                        <li><a href="">Kem lót</a></li>
+                                        <li><a href="">Kem tạo hiệu ứng</a></li>
+                                        <li><a href="">Kem che khuyết điểm</a></li>
+                                        <li><a href="">Phần phủ bột</a></li>
+                                    </ul>
+                                </div>
+                                <div class="subnav-list">
+                                    <h5>Trang điểm mắt môi</h5>
+                                    <ul>
+                                        <li><a href="">Son thỏi</a></li>
+                                        <li><a href="">Son dưỡng</a></li>
+                                        <li><a href="">Màu mắt</a></li>
+                                        <li><a href="">Viền mắt</a></li>
+                                    </ul>
+                                </div>
+                                <div class="subnav-list">
+                                    <h5>Chăm sóc cơ thể</h5>
+                                    <ul>
+                                        <li><a href="">Sữa tắm</a></li>
+                                        <li><a href="">Sữa dưỡng thể</a></li>
+                                        <li><a href="">Nước hoa</a></li>
+                                        <li><a href="">Dầu gội, dầu xả</a></li>
+                                    </ul>
+                                </div>
+                                <div class="subnav-list">
+                                    <h5>Dược mỹ phẩm</h5>
+                                    <ul>
+                                        <li><a href="">Dưỡng ẩm da</a></li>
+                                        <li><a href="">Dưỡng trắng da</a></li>
+                                        <li><a href="">Chống lão hóa da</a></li>
+                                        <li><a href="">Tẩy tế bào chết</a></li>
+                                    </ul>
+                                </div>
+                                <div class="subnav-list">
+                                    <h5>Sức khỏe - làm đẹp</h5>
+                                    <ul>
+                                        <li><a href="">Tinh dầu</a></li>
+                                        <li><a href="">Nước tẩy trang</a></li>
+                                        <li><a href="">Thực phẩm làm đepk</a></li>
+                                        <li><a href="">Nước hoa</a></li>
+                                    </ul>
+                                </div>
+                                <div class="subnav-list">
+                                    <h5>Thực phẩm chức năng</h5>
+                                    <ul>
+                                        <li><a href="">Vitamin & Khoáng chất</a></li>
+                                        <li><a href="">Chống lão hóa da</a></li>
+                                        <li><a href="">Sữa dưỡng thể</a></li>
+                                        <li><a href="">Dầu tẩy trang</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item collapse-item">
+                            <a class="nav-link p-0 scroll-bar" href="news.html">Tin tức</a>
+                        </li>
+                        <li class="nav-item collapse-item">
+                            <a class="nav-link p-0 scroll-bar" href="index.html">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="content">
+        <div class="row details container-fluid p-0 m-0">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 row">
+                <div class="col-md-6">
+                    <div class="productdetail-img">
+                        <img src="" alt="" id="img-product">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="productdetail-info">
+                        <h1 class="productdetail-title"></h1>
+                        <p>Mã Sản Phẩm: <span class="productCode"></span></p>
+                        <p>Thương Hiệu: <span class="trademark"></span> | Tình Trạng: <span class="status"></span></p>
+                        <span class="money"></span>
+                        <p class="information"></p>
+                        <div class="quantity">
+                            <span>Số Lượng: </span>
+                            <div class="icon-quantity">
+                                <span class="decrease">-</span>
+                                <span class="quantityNumber">
+                                    <input type="text" id="number" value="1">
+                                </span>
+                                <span class="increase">+</span>
+                            </div>
+                        </div>
+                        <p class="add-productdetail">Thêm Vào Giỏ Hàng</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="container-fluid row onsale">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 products-onsale">
+                <h1 class="header-title">
+                    <a>Sản Phẩm Liên Quan</a>
+                </h1>
+                <div class="row justify-content-between relate">
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+    <div class="footer" id="lienhe">
+        <div class="row container-fluid footer-contact">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10 row justify-content-around">
+                <div class="contact-info">
+                    <a href="" class="logo-link">
+                        <img src="../img/logo-weskin.svg" alt="" width="150px">
+                    </a>
+                    <div class="contact-info-title">
+                        <p>Shop mỹ phẩm We Skin</p>
+                        <p>Làm đẹp trở nên dễ dàng hơn</p>
+                    </div>
+                    <div class="contact-address">
+                        <p>Địa chỉ: Gò Vấp, TP.Hồ Chí Minh, Vietnam</p>
+                        <p>Hotline: 0101010101</p>
+                        <p>Email: weskin@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-customer row align-items-center">
+                    <div class="customer">
+                        <h3>Hỗ trợ khách hàng</h3>
+                        <div class="support">
+                            <ul>
+                                <li><a href="index.html">Trang chủ</a></li>
+                                <li><a href="about.html">Giới thiệu</a></li>
+                                <li><a href="allproducts.html">Sản phẩm</a></li>
+                                <li><a href="allproducts.html">Khuyến mãi</a></li>
+                                <li><a href="news.html">Tin tức</a></li>
+                                <li><a href="#lienhe">Liên Hệ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="customer">
+                        <h3>Chính sách</h3>
+                        <div class="support">
+                            <ul>
+                                <li><a href="index.html">Trang chủ</a></li>
+                                <li><a href="about.html">Giới thiệu</a></li>
+                                <li><a href="allproducts.html">Sản phẩm</a></li>
+                                <li><a href="allproducts.html">Khuyến mãi</a></li>
+                                <li><a href="news.html">Tin tức</a></li>
+                                <li><a href="#lienhe">Liên Hệ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-connect">
+                    <h3>Kết nối với chúng tôi</h3>
+                    <div class="connect-icon">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-google"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <img src="../img/qrcode.jpg" alt="">
+                    <Figcaption>
+                        <H2 style="padding-right: 36px;">DONATE ME</H2>
+                    </Figcaption>
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+        <div class="footer-describe">
+            <p>&copy; Copyright 2022 |</p><a href="./about.html">Powered By Ha & Vinh</a>
+        </div>
+    </div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+        const productRelate = [
+            {
+                id: 1,
+                name: 'Kem lót Burberry Fresh Glow',
+                trademark: 'Missha',
+                status: 'Còn Hàng',
+                unitprice: '200.000đ',
+                information: 'Thông tin sản phẩm đang được cập nhật',
+                img: '../img/products/kemlot.jpg'
+            },
+            {
+                id: 2,
+                name: 'Dung dịch giúp loại bỏ sơn móng',
+                trademark: 'Missha',
+                status: 'Còn Hàng',
+                unitprice: '200.000đ',
+                information: 'Thông tin sản phẩm đang được cập nhật',
+                img: '../img/products/small1.png'
+            },
+            {
+                id: 3,
+                name: 'Sữa tắm Victoria’s Secret quyến rũ',
+                trademark: 'Missha',
+                status: 'Còn Hàng',
+                unitprice: '840,000₫',
+                information: 'Thông tin sản phẩm đang được cập nhật',
+                img: '../img/products/suatam.png'
+            },
+            {
+                id: 4,
+                name: "Mascara Benefit They're Real",
+                trademark: 'Missha',
+                status: 'Còn Hàng',
+                unitprice: '480,000₫',
+                information: 'Thông tin sản phẩm đang được cập nhật',
+                img: '../img/products/mascara.jpg'
+            }
+        ]
+        localStorage.setItem('productRelate', JSON.stringify(productRelate))
+        const dataRelate = JSON.parse(localStorage.getItem('productRelate'))
+        const display = (product) => {
+            const data =
+                `
+            <div class="product">
+                <div class="product-detail">
+                    <a href="allproducts.html" class="detail-link">
+                        <div class="product-img">
+                            <img src="${product.img}" alt="">
+                        </div>
+                        <div class="product-info">
+                            <p>${product.name}</p>
+                            <span>${product.unitprice}</span>
+                        </div>
+                        <a style="cursor: pointer; color: #fff;" onclick="setIdRelate(${product.id}); clickAdd();" class="add-product">Thêm vào giỏ hàng</a>
+                    </a>
+                </div>
+            </div>
+            `
+            $('.relate').append(data)
+        }
+        const setIdRelate = (id) => {
+            localStorage.setItem('idRelate', id)
+        }
+        dataRelate.forEach(el => {
+            display(el)
+        })
+        const productList = JSON.parse(localStorage.getItem('product'))
+        const id = JSON.parse(localStorage.getItem('id'))
+        const idRelate = JSON.parse(localStorage.getItem('idRelate'))
+        const findIdRelate = dataRelate.find(el => el.id === idRelate)
+        const findId = productList.find(el => el.id === id)
+        let count = 1;
+        let temp = 0
+        const decrease = document.querySelector('.decrease')
+        const quantity = document.getElementById('number');
+        const increase = document.querySelector('.increase')
+        const addproductdetail = document.querySelector('.add-productdetail')
+        decrease.addEventListener('click', () => {
+            if (count > 0) {
+                quantity.setAttribute('value', `${count -= 1}`)
+            }
+            temp = count;
+            return temp;
+        })
+        increase.addEventListener('click', () => {
+            quantity.setAttribute('value', `${count += 1}`)
+            temp = count;
+            return temp;
+        })
+        const addProduct = (product) => {
+            const list = `
+            <li class="list-product-item">
+                <div class="product-list-img">
+                    <img src="${product.img}" alt="">
+                </div>
+                <div class="list-product-description">
+                    <h5 class="product-list-name">${product.name}</h5>
+                    <div class="cost">
+                        <span class="list-cost">${product.unitprice}</span>
+                        <span class="list-quantity">Đã có: ${count}</span>
+                        <span class="delete-product" onclick="removeProduct()" style="cursor: pointer;">Xoá</span>
+                    </div>
+                </div>                                                
+            </li>
+            `
+            $('.list-cart').append(list)
+        }
+        const empty = document.querySelector('.cart-img')
+        const listcart = document.querySelector('.list-product')
+        const itemCart = document.querySelector('.list-product-item')
+        const addAnother = document.querySelector('.add-product')
+        const clickAdd = () => {
+            empty.classList.remove('show')
+            listcart.classList.add('show')
+            addProduct(findIdRelate)
+        }
+        addproductdetail.addEventListener('click', () => {
+            empty.classList.remove('show')
+            listcart.classList.add('show')
+            addProduct(findId)
+        })
+        const removeProduct = () => {
+            $(".list-product-item").remove();
+            empty.classList.add("show");
+            listcart.classList.remove("show");
+        };
+        $(document).ready(() => {
+            $('.productdetail-title').html(findId.name)
+            $('.trademark').html(findId.trademark)
+            $('.status').html(findId.status)
+            $('.money').html(findId.unitprice)
+            $('.information').html(findId.information)
+            $('.productCode').html(findId.productCode)
+            $('#img-product').attr('src', findId.img)
+
+            $('.account').click(() => {
+                $(location).attr('href', './profile.html');
+            })
+        })
+    </script>
+</body>
+
+</html>

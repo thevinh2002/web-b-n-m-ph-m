@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../font/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="icon" href="./../img/logo-weskin.svg" type="image/gif" sizes="32x32">
+    <title>Giới thiệu về trang web và thành viên</title>
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <div id="header">
+            <div class="row head">
+                <div class="col-md-3">
+                    <nav class="nav nav-fill">
+                        <li class="nav-item">
+                            <a class="nav-link p-0 img-fluid" href="index.html">
+                                <img src="../img/logo-weskin.svg" alt="" width="160px">
+                            </a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="col-md-6 row ">
+                    <div class="form-group form-inline w-100 justify-content-center">
+                        <div class="search">
+                            <i class="fa fa-search"></i>
+                            <input type="text" class="form-control dl-block w-100" placeholder="Search product...">
+                            <button class="btn btn-dark">Search</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 align-items-center row justify-content-end">
+                    <div class="row" style="margin-right: 38px;">
+                        <div class="col login d-flex align-items-center">
+                            <div class="account">
+                                <div class="dropdown">
+                                    <i class="fa-solid fa-clipboard-user icon-user" id="dropdownMenuButton"
+                                        aria-haspopup="true" aria-expanded="false"></i>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="login.html">Đăng Nhập</a>
+                                        <a class="dropdown-item" href="registration.html">Đăng Kí</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shopping">
+                                <div class="shopping-cart">
+                                    <i class="fa-solid fa-cart-shopping icon-shopping"></i>
+                                </div>
+                                <div class="cart">
+                                    <div class="cart-img show">
+                                        <img src="../img/empty-cart.webp" alt="" class="empty">
+                                    </div>
+                                    <div class="list-product">
+                                        <h1>Sản phẩm đã thêm</h1>
+                                        <ul class="list-cart">
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="col-sm-1"></div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active collapse-item">
+                            <a class="nav-link p-0 scroll-bar" href="index.html">Trang Chủ <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item collapse-item">
+                            <a class="nav-link p-0 scroll-bar text-dark font-weight-bold" href="about.html">Thành
+                                Viên</a>
+                        </li>
+                        <li class="nav-item dropdown bridge collapse-item">
+                            <a class="nav-link p-0 scroll-bar" href="allproducts.html" id="navbarDropdown">
+                                Sản Phẩm
+                                <i class=" fa-solid fa-caret-down"></i>
+                            </a>
+                            <div class="subnav row">
+                                <div class="subnav-list">
+                                    <h5>Dưỡng da</h5>
+                                    <ul>
+                                        <li><a href="">Mặt nạ</a></li>
+                                        <li><a href="">Kem dưỡng</a></li>
+                                        <li><a href="">Kem chống nắng</a></li>
+                                        <li><a href="">Xịt khoáng</a></li>
+                                    </ul>
+                                </div>
+                                <div class="subnav-list">
+                                    <h5>Làm sạch</h5>
+                                    <ul>
+                                        <li><a href="">Sữa rửa mặt</a></li>
+                                        <li><a href="">Kem tẩy trang</a></li>
+                                        <li><a href="">Dầu tẩy trang</a></li>
+                                        <li><a href="">Nước tẩy trang</a></li>
+                                    </ul>
+                                </div>
+                                <div class="subnav-list">
+                                    <h5>Trang điểm nền</h5>
+                                    <ul>
+                                        <li><a href="">Kem lót</a></li>
+                                        <li><a href="">Kem tạo hiệu ứng</a></li>
+                                        <li><a href="">Kem che khuyết điểm</a></li>
+                                        <li><a href="">Phần phủ bột</a></li>
+                                    </ul>
+                                </div>
+                                <div class="subnav-list">
+                                    <h5>Trang điểm mắt môi</h5>
+                                    <ul>
+                                        <li><a href="">Son thỏi</a></li>
+                                        <li><a href="">Son dưỡng</a></li>
+                                        <li><a href="">Màu mắt</a></li>
+                                        <li><a href="">Viền mắt</a></li>
+                                    </ul>
+                                </div>
+                                <div class="subnav-list">
+                                    <h5>Chăm sóc cơ thể</h5>
+                                    <ul>
+                                        <li><a href="">Sữa tắm</a></li>
+                                        <li><a href="">Sữa dưỡng thể</a></li>
+                                        <li><a href="">Nước hoa</a></li>
+                                        <li><a href="">Dầu gội, dầu xả</a></li>
+                                    </ul>
+                                </div>
+                                <div class="subnav-list">
+                                    <h5>Dược mỹ phẩm</h5>
+                                    <ul>
+                                        <li><a href="">Dưỡng ẩm da</a></li>
+                                        <li><a href="">Dưỡng trắng da</a></li>
+                                        <li><a href="">Chống lão hóa da</a></li>
+                                        <li><a href="">Tẩy tế bào chết</a></li>
+                                    </ul>
+                                </div>
+                                <div class="subnav-list">
+                                    <h5>Sức khỏe - làm đẹp</h5>
+                                    <ul>
+                                        <li><a href="">Tinh dầu</a></li>
+                                        <li><a href="">Nước tẩy trang</a></li>
+                                        <li><a href="">Thực phẩm làm đepk</a></li>
+                                        <li><a href="">Nước hoa</a></li>
+                                    </ul>
+                                </div>
+                                <div class="subnav-list">
+                                    <h5>Thực phẩm chức năng</h5>
+                                    <ul>
+                                        <li><a href="">Vitamin & Khoáng chất</a></li>
+                                        <li><a href="">Chống lão hóa da</a></li>
+                                        <li><a href="">Sữa dưỡng thể</a></li>
+                                        <li><a href="">Dầu tẩy trang</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item collapse-item">
+                            <a class="nav-link p-0 scroll-bar" href="news.html">Tin tức</a>
+                        </li>
+                        <li class="nav-item collapse-item">
+                            <a class="nav-link p-0 scroll-bar" href="#lienhe">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row col-md-1"></div>
+        <div class="row col-md-10">
+            <div class="col-md-9">
+                <div class="content">
+                    <h2>WESKIN – chuyên trang chia sẻ về mỹ phẩm sức khỏe và làm đẹp</h2>
+                    <div class="info">
+                        <h4>VỀ CÂU CHUYỆN CỦA WESKIN</h4>
+                        <h5>Tầm nhìn và sứ mệnh:</h5>
+                        <p><b>Nubeauty hay (Nu beauty)</b> là một tổ chức hoạt động với mong muốn chia sẻ lợi ích đến
+                            cho cộng đồng về làm đẹp. Giúp khách hàng có thể tìm mua được những sản phẩm mỹ phẩm chính
+                            hãng tốt nhất với giá hợp lý nhất.</p>
+                        <p><b><i>Sứ mệnh của chúng tôi</i></b> là trở thành một lực lượng có sức ảnh hưởng tốt nhất với
+                            cộng đồng. Giúp cho những người phụ nữ sau độ tuổi 30 trở nên trẻ đẹp hơn thông qua những bí
+                            quyết làm đẹp được nghiên cứu và tích lũy sau khi làm việc tại các Spa nổi tiếng như: HT
+                            SPA, thẩm mỹ viện Aura…</p>
+                        <div class="logo"><img src="../img/logo-weskin.svg" alt=""></div>
+                        <h5>Giá trị cốt lõi:</h5>
+                        <p>Đạo đức, chân thật, sáng tạo, lạc quan, từ bi và trở thành một lực lượng tốt.</p>
+                    </div>
+                    <div class="info">
+                        <h4>NHẬN DIỆN THƯƠNG HIỆU</h4>
+                        <p>Sự khác biệt của chúng tôi được <b>minh chứng qua cách chúng tôi hỗ trợ khách hàng</b>. Chúng
+                            tôi mong muốn chia sẻ thông điệp và nâng cao giá trị cho cộng đồng. Làm sao có thể mua được
+                            sản phẩm tốt, làm sao có thể mua được sản phẩm có giấy tờ chứng từ rõ ràng.</p>
+                    </div>
+                    <div class="info">
+                        <h4>VỀ CÂU CHUYỆN CỦA WESKIN</h4>
+                        <p>Triết lý kinh doanh của chúng tôi có thể giúp các khách hàng của chúng tôi kết hợp việc chăm
+                            sóc gia đình, sức khỏe và sắc đẹp cho bản thân.</p>
+                        <p>Các yếu tố này cùng ước mơ và hoài bão cháy bỏng đã giúp các đối tác của chúng tôi thành công
+                            và có cuộc sống hạnh phúc.</p>
+                        <p><B>WESKIN</B> còn là chiếc cầu nối giúp mọi người gặp gỡ những người cùng mục tiêu, giúp mọi
+                            người có cuộc sống tốt đẹp hơn thông qua việc tài trợ cho các tổ chức xã hội tại Việt Nam.
+                        </p>
+                    </div>
+                    <h4>Thành Viên Tham Gia</h4>
+                    <div class="member">
+                        <div class="cards">
+                            <div class="card__img">
+                                <img src="./../img/ha.jpg" alt="">
+                            </div>
+                            <h2>Trần Hoàng Hà</h2>
+                            <p class="description">Backend Developer</p>
+                            <div class="social">
+                                <a href="https://www.facebook.com/truc.nguyenvan.5268"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-youtube"></i></a>
+                                <a href=""><i class="fab fa-tiktok"></i></a>
+                                <a href=""><i class="fab fa-github"></i></a>
+                            </div>
+                            <button>Contact Me</button>
+                        </div>
+                        <div class="cards">
+                            <div class="card__img">
+                                <img src="./../img/vinh.jpg" alt="">
+                            </div>
+                            <h2>Vũ Thế Vinh</h2>
+                            <p class="description">Frontend Developer</p>
+                            <div class="social">
+                                <a href="https://www.facebook.com/foodboizverygood"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-youtube"></i></a>
+                                <a href=""><i class="fab fa-tiktok"></i></a>
+                                <a href="https://github.com/thevinh2002"><i class="fab fa-github"></i></a>
+                            </div>
+                            <button>Contact Me</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h4>Danh mục tin tức</h4>
+                <div class="navbar navbar-nav text-left menu-news">
+                    <ul>
+                        <li class="nav-item"><a href="" class="nav-link">Trang chủ</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Thành viên</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Sản phẩm
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Dưỡng da</a>
+                                <a class="dropdown-item" href="#">Làm sạch </a>
+                                <a class="dropdown-item" href="#">Trang điểm nền</a>
+                                <a class="dropdown-item" href="#">Trang điểm mắt môi</a>
+                                <a class="dropdown-item" href="#">Chăm sóc cơ thể</a>
+                                <a class="dropdown-item" href="#">Sức khỏe - làm đẹp</a>
+                                <a class="dropdown-item" href="#">Thực phẩm chức năng</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="" class="nav-link">Tin tức</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row col-md-1"></div>
+    </div>
+    <div class="footer" id="lienhe">
+        <div class="row container-fluid footer-contact">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10 row justify-content-around">
+                <div class="contact-info">
+                    <a href="" class="logo-link">
+                        <img src="../img/logo-weskin.svg" alt="" width="150px">
+                    </a>
+                    <div class="contact-info-title">
+                        <p>Shop mỹ phẩm We Skin</p>
+                        <p>Làm đẹp trở nên dễ dàng hơn</p>
+                    </div>
+                    <div class="contact-address">
+                        <p>Địa chỉ: Gò Vấp, TP.Hồ Chí Minh, Vietnam</p>
+                        <p>Hotline: 0101010101</p>
+                        <p>Email: weskin@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-customer row align-items-center">
+                    <div class="customer">
+                        <h3>Hỗ trợ khách hàng</h3>
+                        <div class="support">
+                            <ul>
+                                <li><a href="index.html">Trang chủ</a></li>
+                                <li><a href="about.html">Giới thiệu</a></li>
+                                <li><a href="allproducts.html">Sản phẩm</a></li>
+                                <li><a href="allproducts.html">Khuyến mãi</a></li>
+                                <li><a href="news.html">Tin tức</a></li>
+                                <li><a href="#lienhe">Liên Hệ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="customer">
+                        <h3>Chính sách</h3>
+                        <div class="support">
+                            <ul>
+                                <li><a href="index.html">Trang chủ</a></li>
+                                <li><a href="about.html">Giới thiệu</a></li>
+                                <li><a href="allproducts.html">Sản phẩm</a></li>
+                                <li><a href="allproducts.html">Khuyến mãi</a></li>
+                                <li><a href="news.html">Tin tức</a></li>
+                                <li><a href="#lienhe">Liên Hệ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-connect">
+                    <h3>Kết nối với chúng tôi</h3>
+                    <div class="connect-icon">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-google"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <img src="../img/qrcode.jpg" alt="">
+                    <Figcaption>
+                        <H2 style="padding-right: 36px;">DONATE ME</H2>
+                    </Figcaption>
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+        <div class="footer-describe">
+            <p>&copy; Copyright 2022 |</p><a href="about.html">Powered By Ha & Vinh</a>
+        </div>
+    </div>
+    <script>
+        $(document).ready(() => {
+            $('.account').click(() => {
+                $(location).attr('href', './profile.html');
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Đăng nhập</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/modal2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./../img/logo-weskin.svg" type="image/gif" sizes="32x32">
+</head>
+
+<body>
+    <div id="main">
+        <div class="wrapper">
+            <div class="inner">
+                <div class="image-holder">
+                    <img src="../img/registration-form-4.jpg" alt="">
+                </div>
+                <form class="" action="">
+                    <h3>Sign up</h3>
+                    <p class="error"></p>
+                    <div class="row">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="email" placeholder="e-mail" id="email" class="form-control">
+                    </div>
+                    <div class="row">
+                        <i class="fa-solid fa-unlock"></i>
+                        <input type="password" placeholder="password" id="psw" class="form-control">
+                    </div>
+                    <div class="forgetpassword">
+                        <label>
+                            <p>You haven't account?</p><a href="registration.html">Click here</a>
+                        </label>
+                    </div>
+                    <div class="form-login">
+                        <button type="button" onclick="loadData()">Sign up</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>
+        let name = localStorage.getItem('name') ? localStorage.getItem('name') : ''
+        if (name != '') {
+            alert('Bạn đã đăng nhập!!');
+            window.location.href = "profile.html";
+        }
+        function loadData() {
+            const err = document.querySelector(".error");
+            var email = document.getElementById("email").value;
+            var psw = document.getElementById("psw").value;
+            var user = [];
+            const userData = JSON.parse(localStorage.getItem("users"));
+            user = userData ? userData : [];
+            const checkEmail = user.find((el) => el.email === email);
+            const checkPassword = user.find((el) => el.password === psw);
+            if (checkPassword && checkEmail) {
+                let current_user = user.filter((el) => {
+                    return el.email == email && el.password == psw;
+                })[0];
+                const userData = JSON.parse(localStorage.getItem('arr'))
+                localStorage.setItem("name", current_user.name);
+                localStorage.setItem("email", current_user.email);
+                const findUserData = userData.find(el => el.name == current_user.name)
+                if (findUserData != null) {
+                    if (current_user.name === findUserData.name) {
+                        localStorage.setItem('fullname', findUserData.fullname)
+                        localStorage.setItem('address', findUserData.address)
+                        localStorage.setItem('phoneNumber', findUserData.phoneNumber)
+                        localStorage.setItem('city', findUserData.city)
+                    }
+                }
+                window.location.href = "profile.html";
+            } else {
+                err.innerHTML = "Email hoặc mật khẩu không đúng";
+            }
+        };
+    </script>
+</body>
+
+</html>
